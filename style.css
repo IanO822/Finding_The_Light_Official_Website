@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #231C1A;
+    /* border: 5px #9d8199 solid;
+    padding: 30px 50px;
+    margin: 30px; */
+    color:white;
+    height:80px;
+    width:100%;
+    position:fixed;
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header ul{
+    position: absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+h1{
+    position: absolute;
+    left:120px;
+    top:0px;
+    line-height: 80px;
+    background-image: url(resource/Finding\ The\ Light\ Logo.png);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: 60px;
+    text-indent: 100px;
+}
+.team-name{
+    color:#F2932F;
+}
+.game-title{
+    color:#FFEC9D;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    color:white;
+    height:95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("resource/news_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news h2{
+    font-size: 60px;
+    margin-top: 60;
+}
+.news p{
+    font-size: 18px;
+    margin: 25px 0;
+    color:#FEF7E6
+}
+header li{
+    display:inline;
+    margin-right: 4vw;
+}
+.menu{
+    display: none;
+}
+/* 響應式語法 */
+@media screen and (max-width:1000px){
+    header ul{
+        display: none;
+    }
+    /* header h1{
+        
+        left:50%;
+        transform:translateX(-50%);
+    } */
+    .news h2{
+        font-size: 40px;
+    }
+    .menu{
+        display: block;
+        background-color: transparent;
+        color:white;
+        font-size: 35px;
+        position:absolute;
+        top:15px;
+        left:20px;
+        border:none;
+        cursor:pointer;
+    }
+}
