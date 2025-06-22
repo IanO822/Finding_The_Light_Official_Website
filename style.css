@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 header{
     background-color: #231C1A;
     /* border: 5px #9d8199 solid;
@@ -63,6 +66,23 @@ h1{
     font-size: 18px;
     margin: 25px 0;
     color:#FEF7E6
+}
+.news a{
+    all: unset;
+    color:white;
+    text-decoration: none;
+    border: 1px solid #ACACAC;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.news button{
+    all: unset;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.news a:hover{
+    cursor: pointer;
 }
 header li{
     display:inline;
